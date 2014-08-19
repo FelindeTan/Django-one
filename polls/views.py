@@ -10,7 +10,12 @@ from polls.models import Choice, Poll
 
 class HomeView(generic.TemplateView):
     template_name = "polls/home.html"
-    
+    # content = ''
+    # for poll in Poll.objects.all():
+    #     content += poll.question
+
+    # return HttpResponse(content)
+
 
 class IndexView(generic.ListView):
     template_name = 'polls/index.html'
