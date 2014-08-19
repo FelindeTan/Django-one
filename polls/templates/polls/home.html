@@ -1,3 +1,16 @@
-THIS IS HOME PAGE!!!!!!
+<!doctype html>
 
+{% load staticfiles %}
+
+
+<html>
+<head> 
+    <title>
+        <link rel="stylesheet" type="text/css" href="{% static 'polls/home.css' %}" />
+    </title>
+</head>
+<body background="../static/images/bg1.jpg">
+    <font size="50" color="white">Welcome to <a href="{% url 'polls:index' %}">Polls</a></font>
+</body>
+</html>
 

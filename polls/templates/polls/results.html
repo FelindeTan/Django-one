@@ -1,7 +1,7 @@
 <h1>{{ poll.question }}</h1>
 
 <ul>
-{% for choice in poll.choice-set.all %}
+{% for choice in poll.choice_set.all %}
     <li>{{ choice.choice_text }} -- {{ choice.votes }} vote{{ choice.votes_pluralize }}</li>
 {% endfor %}
 </ul>
